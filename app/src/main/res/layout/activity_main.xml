@@ -17,6 +17,28 @@
         android:layout_height="wrap_content"
         android:text="Hello World!" />
 
+    <com.commit451.untriggered.UntriggeredRadioButton
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <com.commit451.untriggered.UntriggeredSwitchCompat
+        android:id="@+id/switch_thing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <com.commit451.untriggered.UntriggeredSeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.commit451.untriggered.UntriggeredRatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"

@@ -33,7 +33,7 @@ public class UntriggeredSwitchCompat extends SwitchCompat {
     }
 
     /**
-     * Set the checked state without triggered the registered {@link OnCheckedChangeListener}
+     * Set the checked state without triggering the registered {@link OnCheckedChangeListener}
      * @param checked checked
      * @see {@link #setChecked(boolean)}
      */

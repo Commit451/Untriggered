@@ -33,7 +33,7 @@ public class UntriggeredRadioButton extends AppCompatRadioButton {
     }
 
     /**
-     * Set the checked state without triggered the registered {@link android.widget.CompoundButton.OnCheckedChangeListener}
+     * Set the checked state without triggering the registered {@link android.widget.CompoundButton.OnCheckedChangeListener}
      * @param checked checked
      * @see {@link #setChecked(boolean)}
      */
