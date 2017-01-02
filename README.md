@@ -27,7 +27,7 @@ findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
 ```
 
 # Support
-Please note that this library has a dependency on `appcompat`. Widgets are subclass from their AppCompat counterparts, such as `AppCompatCheckBox` and the like to allow for fancy Material styling on all API levels.
+Please note that this library has a dependency on `appcompat`. Widgets are subclassed from their AppCompat counterparts, such as `AppCompatCheckBox` and the like to allow for fancy Material styling on all API levels.
 
 Currently supported `CompoundButton`s are:
 - CheckBox
@@ -38,7 +38,7 @@ And some others:
 - SeekBar
 - RatingBar
 
-Feel free to make a PR if you feel another one should be added! They are very simple to make.
+Feel free to make a PR if you feel another widget should be added! They are very simple to make.
 
 License
 --------
