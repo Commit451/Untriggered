@@ -37,6 +37,7 @@ Currently supported `CompoundButton`s are:
 And some others:
 - SeekBar
 - RatingBar
+- Spinner
 
 Feel free to make a PR if you feel another widget should be added! They are very simple to make.
 
