@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.CompoundButton;
 import android.widget.RatingBar;
 import android.widget.SeekBar;
@@ -13,6 +14,7 @@ import com.commit451.untriggered.UntriggeredCheckBox;
 import com.commit451.untriggered.UntriggeredRadioButton;
 import com.commit451.untriggered.UntriggeredRatingBar;
 import com.commit451.untriggered.UntriggeredSeekBar;
+import com.commit451.untriggered.UntriggeredSpinner;
 import com.commit451.untriggered.UntriggeredSwitchCompat;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
         final UntriggeredRadioButton radioButton = (UntriggeredRadioButton) findViewById(R.id.radio);
         final UntriggeredSwitchCompat switchCompat = (UntriggeredSwitchCompat) findViewById(R.id.switch_thing);
         final UntriggeredRatingBar ratingBar = (UntriggeredRatingBar) findViewById(R.id.ratingbar);
-        final UntriggeredSeekBar seekBar= (UntriggeredSeekBar) findViewById(R.id.seekbar);
+        final UntriggeredSeekBar seekBar = (UntriggeredSeekBar) findViewById(R.id.seekbar);
+        final UntriggeredSpinner spinner = (UntriggeredSpinner) findViewById(R.id.spinner);
 
         checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -74,6 +77,18 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Snackbar.make(root, "Spinner set to " + position + " and I am triggered!", Snackbar.LENGTH_SHORT)
+                        .show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
                 switchCompat.setCheckedUntriggered(!switchCompat.isChecked());
                 seekBar.setProgressUntriggered(50);
                 ratingBar.setRatingUntriggered(2.5f);
+                spinner.setSelectionUntriggered(1, true);
             }
         });
     }
