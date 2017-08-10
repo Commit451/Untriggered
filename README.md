@@ -33,6 +33,7 @@ Currently supported `CompoundButton`s are:
 - CheckBox
 - RadioButton
 - Switch (SwitchCompat)
+- ToggleButton
 
 And some others:
 - SeekBar
